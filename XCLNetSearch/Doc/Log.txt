@@ -1,0 +1,29 @@
+﻿ASP.NET（c#）通用查询控件
+程序名：XCLNetSearch
+.net版本：4.5
+本查询控件基于JS，提交Form，最终生成SQL中的条件语句，如"a=b or a=c and m like '%n%'"等
+目前只支持SQL SERVER的语法规则
+需要引用的插件如下
+    dynamicCon.js（请使用demo中的版本）
+    jquery
+    My97DatePicker
+访问此网址来获取最新：https://github.com/xucongli1989/XCLNetSearch
+
+更新日期：未知
+程序版本：1.0
+更新记录：
+    1、由原asp.net webform 服务器控件改为直接输出string，而不依赖于服务器控件载体
+
+更新日期：2014-11-15
+程序版本：1.0
+更新记录：
+    1、取消原服务器控件的写法，本次更改可以用于asp.net mvc中
+    2、js中的事件绑定从live改为on的方式,attr改为prop方式
+
+
+更新日期：2013-11-06
+程序版本：1.0.5058.23215
+更新记录：
+    1、比较符号中加入【不包含、自定包含、自定不包含、为空、不为空】
+    2、修复IE6下符号select在change事件中，输入区的select显示不正常的问题
+    3、控件加入一个属性，页面加载时搜索框是否可见

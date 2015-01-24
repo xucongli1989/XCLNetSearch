@@ -1,0 +1,4 @@
+C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.dll
+C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.pdb
+C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.dll
+C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.pdb

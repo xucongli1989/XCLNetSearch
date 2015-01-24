@@ -1,0 +1,8 @@
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\obj\Debug\TestWeb.csprojResolveAssemblyReference.cache
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\bin\TestWeb.dll.config
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\bin\TestWeb.dll
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\bin\TestWeb.pdb
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\bin\XCLNetSearch.dll
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\bin\XCLNetSearch.pdb
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\obj\Debug\TestWeb.dll
+C:\Users\XCL\Desktop\XCLNetSearch\TestWeb\obj\Debug\TestWeb.pdb
