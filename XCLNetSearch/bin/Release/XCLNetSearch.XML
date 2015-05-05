@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XCLNetSearch</name>
+    </assembly>
+    <members>
+        <member name="T:XCLNetSearch.Common">
+            <summary>
+            查询控件helper
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetEnumType(System.Type)">
+            <summary>
+            返回枚举options
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetSearchStrByUrl(XCLNetSearch.Search,System.String)">
+            <summary>
+             返回查询控件的查询语句
+             </summary>
+             <param name="Search1">查询控件</param>
+             <param name="param">Request.QueryString["where"]</param>
+             <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetTimeSqlInfoByFmt(System.String,XCLNetSearch.Common.SearchDateFmt)">
+            <summary>
+            根据日期格式返回SQL时间语句
+            </summary>
+            <param name="timeField">字段名</param>
+            <param name="fmt">时间格式</param>
+        </member>
+        <member name="M:XCLNetSearch.Common.unescape(System.String)">
+            <summary>
+            对js的escape进行解码
+            解码 说明：本方法保证不论参数s是否经过escape()编码，均能得到正确的“解码”结果
+            </summary>
+            <param name="s">解码字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.NoSqlAndHtml(System.String)">
+            <summary>
+            过滤HTML 和SQL 
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:XCLNetSearch.Common.NoHTML(System.String)">
+            <summary>
+            去除HTML标记    
+            </summary>
+            <param name="Htmlstring"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.No_SqlHack(System.String)">
+            <summary>
+            防止SQL注入
+            </summary>
+            <param name="inputStr">輸入的sql語句</param>
+            <returns>過濾後的語句</returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetInt(System.String,System.Int32)">
+            <summary>
+            将字符串转化为整数若值不是数字返回defaultValue
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetDecimal(System.String,System.Decimal)">
+            <summary>
+             将字符串转化为浮点数 若值不是浮点数返回defaultValue
+            </summary>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetDateTime(System.String,System.DateTime)">
+            <summary>
+            转换时间 转换失败则为默认值 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.Common.GenerateStringId">
+            <summary>
+            根据guid生成字符串(16位)
+            例如：aded0a2611f8aa4a
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.Common.GetWebResourceUrl(System.Type,System.String)">
+            <summary>
+            程序集内部资源访问
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.Common.SearchDateFmt">
+            <summary>
+            查询的时间格式
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.CommonState.GetLeftBracket(XCLNetSearch.CommonState.LeftBracket)">
+            <summary>
+            获取实际左括号
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.CommonState.GetRightBracket(XCLNetSearch.CommonState.RightBracket)">
+            <summary>
+            获取实际右括号
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.CommonState.GetLogic(XCLNetSearch.CommonState.logic)">
+            <summary>
+            获取实际逻辑
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XCLNetSearch.CommonState.GetSymbol(XCLNetSearch.CommonState.Symbol)">
+            <summary>
+            根据符号枚举返回实际符号
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.CommonState.LeftBracket">
+            <summary>
+            左括号
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.CommonState.RightBracket">
+            <summary>
+            右括号
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.CommonState.logic">
+            <summary>
+            逻辑
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.CommonState.Symbol">
+            <summary>
+            符号enum
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.EnumObj.IsExistEnumValue(System.Int32,System.Type)">
+            <summary>
+            判断数字是否属于该枚举
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.EnumObj.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.EnumObj.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.Search">
+            <summary>
+            查询控件主体(此控件基于JS)
+            需要引用外部JS：dynamicCon.js、jquery-1.5.2.min.js、My97DatePicker
+            原理：将条件拼接为SQL查询中的WHERE后面的条件语句。使用form提交表单
+            by:xcl @2012.8  qq:80213876  http://blog.csdn.net/luoyeyu1989 （如需修改此控件，请保留此行信息即可，谢谢）
+            </summary>
+        </member>
+        <member name="F:XCLNetSearch.Search.GetRemark">
+            <summary>
+            说明信息
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.Search.InitData">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.GetGuid">
+            <summary>
+            guid作为容器ID
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.IsOnLoadShow">
+            <summary>
+            页面加载时，查询框是否可见
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.MaxLine">
+            <summary>
+            最多几行条件
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.StrParamName">
+            <summary>
+            此控件生成的查询后的参数名，也是隐藏hidden的name
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.StrParamValue">
+            <summary>
+            此控件查询参数的值，也是隐藏hidden的value
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.TypeList">
+            <summary>
+            要查询的字段list（给此字段赋值时即进行此控件数据的初始化）
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.strMsg">
+            <summary>
+            错误信息提示
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.StrSQL">
+            <summary>
+            最终拼接的SQL条件语句
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.IsCompressCode">
+            <summary>
+            是否压缩生成的脚本代码
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.LeftBracketName">
+            <summary>
+            左括号
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.SelSearchTypeName">
+            <summary>
+            搜索的字段
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.SymbolName">
+            <summary>
+            比较符号
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.TxtSearchValueName">
+            <summary>
+            输入区
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.RightBracketName">
+            <summary>
+            右括号
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.Search.LogicName">
+            <summary>
+            逻辑符
+            </summary>
+        </member>
+        <member name="T:XCLNetSearch.SearchFieldInfo">
+            <summary>
+            字段类
+            </summary>
+        </member>
+        <member name="M:XCLNetSearch.SearchFieldInfo.#ctor(System.String,System.String,System.String,System.String[])">
+            <summary>
+            搜索控件字段的构造函数
+            </summary>
+            <param name="Text">字段显示的名字</param>
+            <param name="Value">字段对应的值的格式字符串，如：“A|B|C”【A：数据库中对应的真实字段名、B：此字段的类型，值为"dateTime、number、ntext、string"(ntext主要是为了去掉Like)】、C：输入区控件的类型:select为下拉框，text为文本框</param>
+            <param name="FieldChangedHtml">字段发生change事件时，输入区的option（用于输入区为select的情况）</param>
+            <param name="DateFmt">时间字段的格式（如:yyyy-MM-dd）</param>
+        </member>
+        <member name="P:XCLNetSearch.SearchFieldInfo.Text">
+            <summary>
+            字段显示的名字
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.SearchFieldInfo.Value">
+            <summary>
+            字段对应的值的格式字符串，如：“A|B|C”
+            A：数据库中对应的真实字段名
+            B：此字段的类型，值为"dateTime、number、ntext、string"(ntext主要是为了去掉Like)
+            C：输入区控件的类型:select为下拉框，text为文本框
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.SearchFieldInfo.FieldChangedHtml">
+            <summary>
+            字段发生change事件时，输入区的option（用于输入区为select的情况）
+            </summary>
+        </member>
+        <member name="P:XCLNetSearch.SearchFieldInfo.DateFmt">
+            <summary>
+            字段为时间时，指定时间的格式
+            </summary>
+        </member>
+    </members>
+</doc>

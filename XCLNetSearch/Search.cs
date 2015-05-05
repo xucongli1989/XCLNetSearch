@@ -442,7 +442,7 @@ namespace XCLNetSearch
                         var $searchCon = $con.find("".divSearch"");
                         var $imgSwitch = $con.find("".openImg"");
                         $searchCon.hide();
-                        $(document).on(""click"",$imgSwitch.selector,function () {{
+                        $con.on(""click"","".openImg"",function () {{
                             $searchCon.slideToggle(""fast"", function () {{
                                 if ($(this).css(""display"") == ""none"") {{
                                     $imgSwitch.find(""img"").attr({{ ""src"": ""{20}"",""alt"":""展开搜索"" }});
@@ -457,12 +457,12 @@ namespace XCLNetSearch
                         /*通用搜索中字段下拉框*/
                         var $fieldSel =$con.find(""select[name='{3}']""); /*要搜索的字段下拉框*/
 
-                        $(document).on(""change"",$fieldSel.selector, function () {{
+                        $con.on(""change"",""select[name='{3}']"", function () {{
                             {0}.FieldChange(this);
                         }});
 
                         /*回车提交查询*/
-                        $(document).on(""keypress"",$con.find(""[name='{7}']"").selector,function(event){{
+                        $con.on(""keypress"",""[name='{7}']"",function(event){{
                             if(event.keyCode==""13"")
                             {{
                                 $con.find("".btnSearch"").click();
@@ -473,7 +473,7 @@ namespace XCLNetSearch
                         var $btnSearchObj=$con.find("".btnSearch"");
                         $btnSearchObj.hover(function(){{$(this).find(""img"").attr({{""src"":""{24}""}});}},function(){{$(this).find(""img"").attr({{""src"":""{19}""}});}});
                         /*搜索：绑定提交事件*/
-                        $(document).on(""click"",$btnSearchObj.selector,function(){{
+                        $con.on(""click"","".btnSearch"",function(){{
                             $con.closest(""form"").submit();
                         }});
                         $con.closest(""form"").submit( function () {{
@@ -569,7 +569,7 @@ namespace XCLNetSearch
             $(function(){{
                 {0}.Init();
 
-                $(document).on(""change"",$("".{0}"").find(""select[name='{3}']"").selector, function () {{
+                $("".{0}"").on(""change"",""select[name='{3}']"", function () {{
                     {12}
                 }});
 

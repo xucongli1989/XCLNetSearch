@@ -2,3 +2,7 @@ C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.dll
 C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.pdb
 C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.dll
 C:\Users\XCL\Desktop\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.pdb
+D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.dll
+D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.pdb
+D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.dll
+D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.pdb
