@@ -4,3 +4,8 @@ D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.pdb
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.csprojResolveAssemblyReference.cache
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.dll
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.XML
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.dll
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.dll
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.pdb

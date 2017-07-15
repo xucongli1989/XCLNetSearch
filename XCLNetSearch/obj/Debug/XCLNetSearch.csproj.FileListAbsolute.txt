@@ -6,3 +6,7 @@ D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.dll
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.pdb
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.dll
 D:\MyData\Git\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.dll
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Debug\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.dll
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Debug\XCLNetSearch.pdb

@@ -13,3 +13,11 @@ D:\MyData\Git\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.pdb
 D:\MyData\Git\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.csprojResolveAssemblyReference.cache
 D:\MyData\Git\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.dll
 D:\MyData\Git\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.pdb
+D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\TestWeb.dll.config
+D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\TestWeb.dll
+D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\TestWeb.pdb
+D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.dll
+D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.csprojResolveAssemblyReference.cache
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.dll
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Debug\TestWeb.pdb

@@ -95,10 +95,10 @@ namespace XCLNetSearch
         /// </summary>
         public enum Symbol
         {
-            包含 = 0,
-            不包含 = 10,
             等于 = 1,
             不等于 = 2,
+            包含 = 0,
+            不包含 = 10,
             大于 = 3,
             大于等于 = 4,
             小于 = 5,
