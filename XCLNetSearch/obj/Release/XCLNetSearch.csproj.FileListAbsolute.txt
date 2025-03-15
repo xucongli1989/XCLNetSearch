@@ -9,3 +9,5 @@ D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.dll
 D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\bin\Release\XCLNetSearch.pdb
 D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.dll
 D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.pdb
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.csproj.AssemblyReference.cache
+D:\MyData\GitHub\XCLNetSearch\XCLNetSearch\obj\Release\XCLNetSearch.csproj.CoreCompileInputs.cache

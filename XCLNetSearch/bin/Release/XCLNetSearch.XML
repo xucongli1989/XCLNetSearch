@@ -45,13 +45,13 @@
         </member>
         <member name="M:XCLNetSearch.Common.NoSqlAndHtml(System.String)">
             <summary>
-            过滤HTML 和SQL 
+            过滤HTML 和SQL
             </summary>
             <param name="str"></param>
         </member>
         <member name="M:XCLNetSearch.Common.NoHTML(System.String)">
             <summary>
-            去除HTML标记    
+            去除HTML标记
             </summary>
             <param name="Htmlstring"></param>
             <returns></returns>
@@ -79,7 +79,7 @@
         </member>
         <member name="M:XCLNetSearch.Common.GetDateTime(System.String,System.DateTime)">
             <summary>
-            转换时间 转换失败则为默认值 
+            转换时间 转换失败则为默认值
             </summary>
             <returns></returns>
         </member>

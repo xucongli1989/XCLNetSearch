@@ -4,6 +4,8 @@ D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\TestWeb.pdb
 D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.dll
 D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.pdb
 D:\MyData\GitHub\XCLNetSearch\TestWeb\bin\XCLNetSearch.xml
-D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.csprojResolveAssemblyReference.cache
 D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.dll
 D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.pdb
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.csproj.AssemblyReference.cache
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.csproj.CoreCompileInputs.cache
+D:\MyData\GitHub\XCLNetSearch\TestWeb\obj\Release\TestWeb.csproj.Up2Date

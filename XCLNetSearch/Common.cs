@@ -15,6 +15,7 @@ namespace XCLNetSearch
     public class Common
     {
         #region 私有变量
+
         private static byte[] val = { 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F,
           0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F,
           0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F,
@@ -39,7 +40,8 @@ namespace XCLNetSearch
           0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F,
           0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F,
           0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F };
-        #endregion
+
+        #endregion 私有变量
 
         /// <summary>
         /// 返回枚举options
@@ -87,6 +89,7 @@ namespace XCLNetSearch
                         if (s.Length == 7)
                         {
                             #region 一：拆分数据 s0:左括号 s1:字段 s2:字段类型 s3:符号 s4:输入区 s5:右括号 s6:逻辑
+
                             int s0 = Common.GetInt(s[0], -1);
                             string s1 = s[1];
                             string s2 = s[2];
@@ -94,9 +97,11 @@ namespace XCLNetSearch
                             string s4 = Common.No_SqlHack(unescape(s[4]));
                             int s5 = Common.GetInt(s[5], -1);
                             int s6 = Common.GetInt(s[6], -1);
-                            #endregion
+
+                            #endregion 一：拆分数据 s0:左括号 s1:字段 s2:字段类型 s3:符号 s4:输入区 s5:右括号 s6:逻辑
 
                             #region 二：结上诉内容进行合法性检测开始
+
                             if (s0 != -1 && !EnumObj.IsExistEnumValue(s0, typeof(CommonState.LeftBracket)))
                             {
                                 //strMsg.Append("左括号有误；");
@@ -127,17 +132,18 @@ namespace XCLNetSearch
                                 //strMsg.Append("逻辑符有误；");
                                 continue;
                             }
-                            #endregion 检测结束
+
+                            #endregion 二：结上诉内容进行合法性检测开始
 
                             #region 三：针对不同数据类型，对输入的数据进行处理
+
                             string strS4 = "";
                             switch (s2)
                             {
                                 case "number":
-                                    double s4Long = -1;
-                                    double.TryParse(s4, out s4Long);
-                                    strS4 = s4Long.ToString();
+                                    strS4 = GetNumberString(s4);
                                     break;
+
                                 case "string":
                                     if (s3 == (int)CommonState.Symbol.包含 || s3 == (int)CommonState.Symbol.不包含)
                                     {
@@ -156,54 +162,67 @@ namespace XCLNetSearch
                                         strS4 = string.Format(" '{0}' ", s4);
                                     }
                                     break;
+
                                 case "dateTime":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(3));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime0":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(0));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime1":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(1));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime2":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(2));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime3":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(3));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime4":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(4));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime5":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(5));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime6":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(6));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime7":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(7));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime8":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(8));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime9":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(9));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 case "dateTime10":
                                     s1 = GetTimeSqlInfoByFmt(s1, (SearchDateFmt)(10));
                                     strS4 = string.Format("'{0}'", Common.GetDateTime(s4, DateTime.Now.Date));
                                     break;
+
                                 default:
                                     strS4 = string.Format("'{0}'", s4);
                                     break;
@@ -216,15 +235,18 @@ namespace XCLNetSearch
                                     s3 = (int)CommonState.Symbol.等于;
                                     strS4 = "0";
                                     break;
+
                                 case (int)CommonState.Symbol.不为空:
                                     s1 = string.Format("len(isnull(ltrim(rtrim({0})),''))", s1);
                                     s3 = (int)CommonState.Symbol.大于;
                                     strS4 = "0";
                                     break;
                             }
-                            #endregion
+
+                            #endregion 三：针对不同数据类型，对输入的数据进行处理
 
                             #region 四：正式拼接查询SQL
+
                             current = string.Format(" {0} {1} {2} {3} {4} {5} ",
                                 s0 == -1 ? "" : CommonState.GetLeftBracket((CommonState.LeftBracket)s0),
                                 s1,
@@ -234,13 +256,15 @@ namespace XCLNetSearch
                                 i == where.Length - 1 ? "" : CommonState.GetLogic((CommonState.logic)s6)//去掉最后一个"逻辑"
                                 );
                             str.Append(current + " ");
-                            #endregion
+
+                            #endregion 四：正式拼接查询SQL
                         }
                     }
                 }
             }
 
-            #region  五：检查待运行的SQL条件的正反括号是否匹配
+            #region 五：检查待运行的SQL条件的正反括号是否匹配
+
             Regex reg = new Regex(@"^[^\(\)]*(((?<o>\()[^\(\)]*)+[^\(\)]*((?<-o>\))[^\(\)]*)+)*(?(o)(?!))$");
             if (str.Length > 0 && !reg.IsMatch(str.ToString()))
             {
@@ -251,7 +275,8 @@ namespace XCLNetSearch
             {
                 Search1.strMsg = strMsg.ToString();
             }
-            #endregion
+
+            #endregion 五：检查待运行的SQL条件的正反括号是否匹配
 
             return str.ToString();
         }
@@ -287,33 +312,43 @@ namespace XCLNetSearch
                 case SearchDateFmt.yyyy_MM_dd_HH_mm_ss:
                     str = string.Format("CONVERT(DATETIME,CONVERT(varchar(100), {0}, 20))", timeField);
                     break;
+
                 case SearchDateFmt.yyyy_MM_dd_HH_mm:
                     str = string.Format("CONVERT(DATETIME,CONVERT(varchar(16), {0}, 120)+':00')", timeField);
                     break;
+
                 case SearchDateFmt.yyyy_MM_dd_HH:
                     str = string.Format("CONVERT(DATETIME,CONVERT(varchar(13), {0}, 120)+':00:00')", timeField);
                     break;
+
                 case SearchDateFmt.yyyy_MM:
                     str = string.Format("CONVERT(DATETIME,CONVERT(varchar(7), {0}, 120)+'-01 00:00:00')", timeField);
                     break;
+
                 case SearchDateFmt.yyyy:
                     str = string.Format("DATEPART(yyyy,{0})", timeField);
                     break;
+
                 case SearchDateFmt.MM:
                     str = string.Format("DATEPART(MM,{0})", timeField);
                     break;
+
                 case SearchDateFmt.dd:
                     str = string.Format("DATEPART(dd,{0})", timeField);
                     break;
+
                 case SearchDateFmt.HH:
                     str = string.Format("DATEPART(HH,{0})", timeField);
                     break;
+
                 case SearchDateFmt.mm:
                     str = string.Format("DATEPART(mm,{0})", timeField);
                     break;
+
                 case SearchDateFmt.ss:
                     str = string.Format("DATEPART(ss,{0})", timeField);
                     break;
+
                 default://yyyy-MM-dd
                     str = string.Format("DATEADD(day,DATEDIFF(day,0,{0}),0)", timeField);
                     break;
@@ -382,7 +417,7 @@ namespace XCLNetSearch
         }
 
         /// <summary>
-        /// 过滤HTML 和SQL 
+        /// 过滤HTML 和SQL
         /// </summary>
         /// <param name="str"></param>
         internal static string NoSqlAndHtml(string str)
@@ -396,7 +431,7 @@ namespace XCLNetSearch
         }
 
         /// <summary>
-        /// 去除HTML标记    
+        /// 去除HTML标记
         /// </summary>
         /// <param name="Htmlstring"></param>
         /// <returns></returns>
@@ -406,9 +441,9 @@ namespace XCLNetSearch
             {
                 return "";
             }
-            //删除脚本    
+            //删除脚本
             Htmlstring = Regex.Replace(Htmlstring, @"<script[^>]*?>.*?</script>", "", RegexOptions.IgnoreCase);
-            //删除HTML    
+            //删除HTML
             Htmlstring = Regex.Replace(Htmlstring, @"<(.[^>]*)>", "", RegexOptions.IgnoreCase);
             Htmlstring = Regex.Replace(Htmlstring, @"([\r\n])[\s]+", "", RegexOptions.IgnoreCase);
             Htmlstring = Regex.Replace(Htmlstring, @"-->", "", RegexOptions.IgnoreCase);
@@ -499,7 +534,7 @@ namespace XCLNetSearch
         }
 
         /// <summary>
-        /// 转换时间 转换失败则为默认值 
+        /// 转换时间 转换失败则为默认值
         /// </summary>
         /// <returns></returns>
         internal static DateTime GetDateTime(string key, DateTime defaultValue)
@@ -543,6 +578,16 @@ namespace XCLNetSearch
                 break;
             }
             return resourceUrl;
+        }
+
+        private static string GetNumberString(string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                return string.Empty;
+            }
+            str = str.Trim();
+            return new Regex(@"^-?\d+(\.\d+)?$").IsMatch(str) ? str : string.Empty;
         }
     }
 }
